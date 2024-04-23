@@ -98,6 +98,7 @@ class Sudoky:
     def reshenie_sudoky(self):
         while Sudoky.proverka_res(self):
             Sudoky.sudoku_solution_iteration(self)
+            maping.beautiful_print_map()
 
 
 
@@ -132,7 +133,4 @@ maps = [[0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0]]
 
 maping = Sudoky()
-
-maping.beautiful_print_map()
 maping.reshenie_sudoky()
-maping.beautiful_print_map()

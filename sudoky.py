@@ -60,7 +60,7 @@ class Sudoky:
         for y in range(9):
             for x in range(9):
                 col_resh = self.check_variation(x, y)
-                if len(col_resh) == 1 and col_resh != ['filled cell']:
+                if len(col_resh) == 1 and col_resh != 'filled cell':
                     self.pole[y][x] = col_resh[0]
 
     def reshenie_sudoky(self):
